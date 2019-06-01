@@ -1,16 +1,17 @@
+//LIBRERÍAS
 const express = require('express');
+const fs = require('fs'); //Esta se llama FileSystem
+const formidable = require('express-formidable');
 const app = express();
 
-app.get('/', function(request, response) {
-  response.send('ola kease');
+app.use(express.static('public'));
+
+app.get('/get-posts', function(request, response) {
+  response.sendFile(__dirname + '/data/posts.json');
 });
 
-app.get('/spring', function(request, response) {
-  response.send('ola esprimavera');
-});
+app.post('/create-post', function(req, res) {
 
-app.get('/summer', function(request, response) {
-  response.send('ola calorrr');
 });
 
 app.listen(3000, function () {
