@@ -1,0 +1,22 @@
+{
+  "name": "express-workshop",
+  "version": "1.0.0",
+  "description": "primer proyecto node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leireriel/express-workshop.git"
+  },
+  "author": "leire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leireriel/express-workshop/issues"
+  },
+  "homepage": "https://github.com/leireriel/express-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
